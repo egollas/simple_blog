@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WynBlog</title>
+    <title>Wyncode Life</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <script src="http://yandex.st/jquery/1.11.1/jquery.min.js"></script>
 <link href="http://yandex.st/bootstrap/3.1.1/css/bootstrap.min.css" media="screen" rel="stylesheet" />
 <script src="http://yandex.st/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Emblema+One" rel="stylesheet">
+
   </head>
 
   <body>
@@ -17,6 +20,7 @@
     <p class="alert"><%= alert %></p>
     <div class="container-fluid">
       <%= yield %>
+      <%= render 'shared/footer' %>
     </div>
   </body>
 </html>
