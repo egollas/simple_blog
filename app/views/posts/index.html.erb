@@ -1,10 +1,7 @@
 
 
-
-
-
 <div class="container">
-  <div class="col-sm-10 col-sm-offset-1 col-xs-12 blog-content">
+  <div class=" blog-content">
     <% @posts.each do |post| %>
     <div class="col-xs-12">
       <div class="text-center">
@@ -14,7 +11,7 @@
 
 
 
-         <div class="img-size"><%= raw post.body.truncate(500) %></div>
+         <div class="img-size"><%= raw post.body.truncate(1000) %></div>
 
       <!-- <%= truncate(strip_tags(post.body), :length => 500) %> -->
 
@@ -37,12 +34,3 @@
   </div>
 </div>
 <!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2><%= mail_to "info@wyncodelife.co", "Contact Us", subject: "Hi! Please include your name and email address" %></h2><br>
-                <hr class="star-primary">
-            </div>
-        </div>
-</section>
